@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "af3feb10fe1b07e56db87e0b71f05797",
-    "content-hash": "cde0995d2433c3d768052f791eed6989",
+    "hash": "ab48074e6d215c617a3130c6eaf72d67",
+    "content-hash": "7f663eb8a4ca21ad7f0eac10b6828db3",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1052,6 +1052,56 @@
                 "shell"
             ],
             "time": "2015-07-16 15:26:57"
+        },
+        {
+            "name": "rych/random",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rchouinard/rych-random.git",
+                "reference": "296cd31f16714be924911dc0b1db5cbce0e49db8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rchouinard/rych-random/zipball/296cd31f16714be924911dc0b1db5cbce0e49db8",
+                "reference": "296cd31f16714be924911dc0b1db5cbce0e49db8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7",
+                "satooshi/php-coveralls": "~0.6"
+            },
+            "suggest": {
+                "ext-mcrypt": "*",
+                "ext-openssl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rych\\Random\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Chouinard",
+                    "email": "rchouinard@gmail.com",
+                    "homepage": "http://ryanchouinard.com"
+                }
+            ],
+            "description": "Random data generator for PHP",
+            "homepage": "https://github.com/rchouinard/rych-random",
+            "keywords": [
+                "cryptography",
+                "random"
+            ],
+            "time": "2015-07-01 04:06:58"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3079,7 +3129,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rych/random": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

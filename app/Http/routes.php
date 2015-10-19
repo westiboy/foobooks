@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/practice', function(){
-	echo config('app.url');
+	$random = new Rych\Random\Random();
+    return $random->getRandomString(8);
 });
 Route::resource('tag', 'TagController');
