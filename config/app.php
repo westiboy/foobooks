@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('APP_URL', 'http://foobooks.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -140,12 +140,13 @@ return [
         /*
          * Application Service Providers...
          */
-        Foobooks\Providers\AppServiceProvider::class,
-        Foobooks\Providers\AuthServiceProvider::class,
-        Foobooks\Providers\EventServiceProvider::class,
-        Foobooks\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
         Barryvdh\Debugbar\ServiceProvider::class,
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 
     ],
 
@@ -197,6 +198,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Random'   => 'Rych\Random\Random',
 
     ],
 
